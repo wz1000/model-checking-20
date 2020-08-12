@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 AUG 2020 09:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 AUG 2020 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -937,29 +937,42 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 53.
+line 52.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [2
 
-] [3
+] <pics/contdynamics.png, id=32, 576.1525pt x 404.51125pt>
+File: pics/contdynamics.png Graphic file (type png)
 
-] [4
+<use pics/contdynamics.png>
+Package pdftex.def Info: pics/contdynamics.png used on input line 56.
+(pdftex.def)             Requested size: 172.84708pt x 121.35431pt.
+ [3
 
-] [5
+ <./pics/contdynamics.png>]
+<pics/HWabs.png, id=40, 904.37875pt x 623.32875pt>
+File: pics/HWabs.png Graphic file (type png)
+ <use pics/HWabs.png>
+Package pdftex.def Info: pics/HWabs.png used on input line 60.
+(pdftex.def)             Requested size: 271.31572pt x 187.00006pt.
+
+[4
+
+ <./pics/HWabs.png>] [5
 
 ] [6
 
@@ -968,6 +981,256 @@ thkerncmss.
 ] [8
 
 ] [9
+
+] [10
+
+] [11
+
+]
+<pics/code.png, id=87, 248.93pt x 113.42375pt>
+File: pics/code.png Graphic file (type png)
+ <use pics/code.png>
+Package pdftex.def Info: pics/code.png used on input line 115.
+(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+
+<pics/xymodprogcfg.png, id=88, 605.26125pt x 181.67876pt>
+File: pics/xymodprogcfg.png Graphic file (type png)
+
+<use pics/xymodprogcfg.png>
+Package pdftex.def Info: pics/xymodprogcfg.png used on input line 115.
+(pdftex.def)             Requested size: 181.57976pt x 54.50404pt.
+
+<pics/xymodprogTS1.png, id=89, 480.79625pt x 247.92625pt>
+File: pics/xymodprogTS1.png Graphic file (type png)
+
+<use pics/xymodprogTS1.png>
+Package pdftex.def Info: pics/xymodprogTS1.png used on input line 115.
+(pdftex.def)             Requested size: 120.19876pt x 61.9814pt.
+ [12
+
+ <./pics/code.png> <./pics/xymodprogcfg.png> <./pics/xymodprogTS1.png>]
+File: pics/code.png Graphic file (type png)
+ <use pics/code.png>
+Package pdftex.def Info: pics/code.png used on input line 115.
+(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+File: pics/xymodprogcfg.png Graphic file (type png)
+ <use pics/xymodprogcfg.png>
+Package pdftex.def Info: pics/xymodprogcfg.png used on input line 115.
+(pdftex.def)             Requested size: 181.57976pt x 54.50404pt.
+File: pics/xymodprogTS1.png Graphic file (type png)
+
+<use pics/xymodprogTS1.png>
+Package pdftex.def Info: pics/xymodprogTS1.png used on input line 115.
+(pdftex.def)             Requested size: 120.19876pt x 61.9814pt.
+ [13
+
+]
+File: pics/code.png Graphic file (type png)
+ <use pics/code.png>
+Package pdftex.def Info: pics/code.png used on input line 115.
+(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+File: pics/xymodprogcfg.png Graphic file (type png)
+
+<use pics/xymodprogcfg.png>
+Package pdftex.def Info: pics/xymodprogcfg.png used on input line 115.
+(pdftex.def)             Requested size: 181.57976pt x 54.50404pt.
+File: pics/xymodprogTS1.png Graphic file (type png)
+ <use pics/xymodprogTS1.png>
+Package pdftex.def Info: pics/xymodprogTS1.png used on input line 115.
+(pdftex.def)             Requested size: 120.19876pt x 61.9814pt.
+ [14
+
+] [15
+
+]
+<pics/symbolic1.png, id=117, 863.225pt x 497.86pt>
+File: pics/symbolic1.png Graphic file (type png)
+ <use pics/symbolic1.png>
+Package pdftex.def Info: pics/symbolic1.png used on input line 131.
+(pdftex.def)             Requested size: 258.9695pt x 149.35915pt.
+
+[16
+
+ <./pics/symbolic1.png>] <pics/symbolic2.png, id=124, 883.3pt x 463.7325pt>
+File: pics/symbolic2.png Graphic file (type png)
+
+<use pics/symbolic2.png>
+Package pdftex.def Info: pics/symbolic2.png used on input line 135.
+(pdftex.def)             Requested size: 264.99205pt x 139.12082pt.
+ [17
+
+ <./pics/symbolic2.png>]
+<pics/symbolic3.png, id=131, 921.4425pt x 483.8075pt>
+File: pics/symbolic3.png Graphic file (type png)
+ <use pics/symbolic3.png>
+Package pdftex.def Info: pics/symbolic3.png used on input line 139.
+(pdftex.def)             Requested size: 276.43488pt x 145.14337pt.
+
+[18
+
+ <./pics/symbolic3.png>]
+File: pics/code.png Graphic file (type png)
+ <use pics/code.png>
+Package pdftex.def Info: pics/code.png used on input line 151.
+(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+File: pics/xymodprogcfg.png Graphic file (type png)
+ <use pics/xymodprogcfg.png>
+Package pdftex.def Info: pics/xymodprogcfg.png used on input line 151.
+(pdftex.def)             Requested size: 181.57976pt x 54.50404pt.
+File: pics/xymodprogTS1.png Graphic file (type png)
+
+<use pics/xymodprogTS1.png>
+Package pdftex.def Info: pics/xymodprogTS1.png used on input line 151.
+(pdftex.def)             Requested size: 120.19876pt x 61.9814pt.
+ [19
+
+]
+File: pics/code.png Graphic file (type png)
+ <use pics/code.png>
+Package pdftex.def Info: pics/code.png used on input line 151.
+(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+File: pics/xymodprogcfg.png Graphic file (type png)
+
+<use pics/xymodprogcfg.png>
+Package pdftex.def Info: pics/xymodprogcfg.png used on input line 151.
+(pdftex.def)             Requested size: 181.57976pt x 54.50404pt.
+File: pics/xymodprogTS1.png Graphic file (type png)
+ <use pics/xymodprogTS1.png>
+Package pdftex.def Info: pics/xymodprogTS1.png used on input line 151.
+(pdftex.def)             Requested size: 120.19876pt x 61.9814pt.
+ [20
+
+]
+File: pics/code.png Graphic file (type png)
+
+<use pics/code.png>
+Package pdftex.def Info: pics/code.png used on input line 151.
+(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+File: pics/xymodprogcfg.png Graphic file (type png)
+ <use pics/xymodprogcfg.png>
+Package pdftex.def Info: pics/xymodprogcfg.png used on input line 151.
+(pdftex.def)             Requested size: 181.57976pt x 54.50404pt.
+File: pics/xymodprogTS1.png Graphic file (type png)
+ <use pics/xymodprogTS1.png>
+Package pdftex.def Info: pics/xymodprogTS1.png used on input line 151.
+(pdftex.def)             Requested size: 120.19876pt x 61.9814pt.
+
+[21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] <pics/codearb.png, id=177, 242.9075pt x 65.24374pt>
+File: pics/codearb.png Graphic file (type png)
+
+<use pics/codearb.png>
+Package pdftex.def Info: pics/codearb.png used on input line 177.
+(pdftex.def)             Requested size: 72.8728pt x 19.57326pt.
+ <pics/xymodprogTS.png, id=178, 828.09375pt x 293.095pt>
+File: pics/xymodprogTS.png Graphic file (type png)
+
+<use pics/xymodprogTS.png>
+Package pdftex.def Info: pics/xymodprogTS.png used on input line 177.
+(pdftex.def)             Requested size: 207.02293pt x 73.27356pt.
+ [26
+
+ <./pics/codearb.png> <./pics/xymodprogTS.png>]
+File: pics/codearb.png Graphic file (type png)
+
+<use pics/codearb.png>
+Package pdftex.def Info: pics/codearb.png used on input line 177.
+(pdftex.def)             Requested size: 72.8728pt x 19.57326pt.
+File: pics/xymodprogTS.png Graphic file (type png)
+ <use pics/xymodprogTS.png>
+Package pdftex.def Info: pics/xymodprogTS.png used on input line 177.
+(pdftex.def)             Requested size: 207.02293pt x 73.27356pt.
+ [27
+
+]
+File: pics/codearb.png Graphic file (type png)
+ <use pics/codearb.png>
+Package pdftex.def Info: pics/codearb.png used on input line 177.
+(pdftex.def)             Requested size: 72.8728pt x 19.57326pt.
+File: pics/xymodprogTS.png Graphic file (type png)
+
+<use pics/xymodprogTS.png>
+Package pdftex.def Info: pics/xymodprogTS.png used on input line 177.
+(pdftex.def)             Requested size: 207.02293pt x 73.27356pt.
+ [28
+
+]
+<pics/mod3cnt.png, id=196, 671.50874pt x 241.90375pt>
+File: pics/mod3cnt.png Graphic file (type png)
+ <use pics/mod3cnt.png>
+Package pdftex.def Info: pics/mod3cnt.png used on input line 188.
+(pdftex.def)             Requested size: 201.45418pt x 72.57167pt.
+
+[29
+
+ <./pics/mod3cnt.png>]
+File: pics/mod3cnt.png Graphic file (type png)
+ <use pics/mod3cnt.png>
+Package pdftex.def Info: pics/mod3cnt.png used on input line 194.
+(pdftex.def)             Requested size: 201.45418pt x 72.57167pt.
+
+<pics/mod3cntTSwithInput.png, id=203, 326.21875pt x 284.06125pt>
+File: pics/mod3cntTSwithInput.png Graphic file (type png)
+
+<use pics/mod3cntTSwithInput.png>
+Package pdftex.def Info: pics/mod3cntTSwithInput.png used on input line 194.
+(pdftex.def)             Requested size: 97.86636pt x 85.21902pt.
+
+<pics/inputnondetTS.png, id=204, 400.49625pt x 472.76625pt>
+File: pics/inputnondetTS.png Graphic file (type png)
+
+<use pics/inputnondetTS.png>
+Package pdftex.def Info: pics/inputnondetTS.png used on input line 194.
+(pdftex.def)             Requested size: 120.1498pt x 141.83096pt.
+ [30
+
+ <./pics/mod3cntTSwithInput.png> <./pics/inputnondetTS.png>]
+File: pics/mod3cnt.png Graphic file (type png)
+ <use pics/mod3cnt.png>
+Package pdftex.def Info: pics/mod3cnt.png used on input line 194.
+(pdftex.def)             Requested size: 201.45418pt x 72.57167pt.
+File: pics/mod3cntTSwithInput.png Graphic file (type png)
+ <use pics/mod3cntTSwithInput.png>
+Package pdftex.def Info: pics/mod3cntTSwithInput.png used on input line 194.
+(pdftex.def)             Requested size: 97.86636pt x 85.21902pt.
+File: pics/inputnondetTS.png Graphic file (type png)
+
+<use pics/inputnondetTS.png>
+Package pdftex.def Info: pics/inputnondetTS.png used on input line 194.
+(pdftex.def)             Requested size: 120.1498pt x 141.83096pt.
+ [31
+
+]
+File: pics/mod3cnt.png Graphic file (type png)
+ <use pics/mod3cnt.png>
+Package pdftex.def Info: pics/mod3cnt.png used on input line 194.
+(pdftex.def)             Requested size: 201.45418pt x 72.57167pt.
+File: pics/mod3cntTSwithInput.png Graphic file (type png)
+
+<use pics/mod3cntTSwithInput.png>
+Package pdftex.def Info: pics/mod3cntTSwithInput.png used on input line 194.
+(pdftex.def)             Requested size: 97.86636pt x 85.21902pt.
+File: pics/inputnondetTS.png Graphic file (type png)
+ <use pics/inputnondetTS.png>
+Package pdftex.def Info: pics/inputnondetTS.png used on input line 194.
+(pdftex.def)             Requested size: 120.1498pt x 141.83096pt.
+ [32
+
+] [33
+
+]
+[34
+
+] [35
 
 ]
 \tf@nav=\write6
@@ -979,11 +1242,11 @@ thkerncmss.
 \tf@snm=\write8
 \openout8 = `modeling1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
  (./modeling1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `modeling1.out' has not changed.
 (rerunfilecheck)             Checksum: AA00284689460AEDC65BD14C4004DF51;42.
 
@@ -991,30 +1254,32 @@ Package rerunfilecheck Info: File `modeling1.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
  ) 
 Here is how much of TeX's memory you used:
- 17283 strings out of 493014
- 329685 string characters out of 6133351
- 419501 words of memory out of 5000000
- 20388 multiletter control sequences out of 15000+600000
+ 17430 strings out of 493014
+ 331819 string characters out of 6133351
+ 417501 words of memory out of 5000000
+ 20468 multiletter control sequences out of 15000+600000
  13884 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,11n,55p,408b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,55p,408b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pf
-b>
-Output written on modeling1.pdf (9 pages, 85335 bytes).
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on modeling1.pdf (35 pages, 3271526 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -49,42 +49,162 @@
 
 \item Modeling Examples
 \end{itemize}
+\end{frame}
 
+\begin{frame}{An Continuous Domain Example}
+\uncover<1->{\includegraphics[scale=0.3]{pics/contdynamics.png}}
+\end{frame}
+
+\begin{frame}{A Hardware Abstraction Example}
+\uncover<1->{\includegraphics[scale=0.3]{pics/HWabs.png}}
+\end{frame}
+
+\begin{frame}{Modeling: States}
+\begin{itemize}
+\item<1-> Our systems have a state, \\
+the model has a set of states
+
+\item<2-> This is typically given as a valuation of state variables
+\begin{itemize}
+\item $\theta$
+\item Velocity
+\item Data stored in program variables
+\item Data stored in hardware registers/flip-flops
+\item ....
+\end{itemize}
+
+\item<3-> We focus on \underline{discrete state variables}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modeling State Transitions}
+\begin{itemize}
+\item<1-> When the state changes with time, \\
+we have a \underline{state transition}
+
+\item<2-> Time can be modeled as
+ \begin{itemize}
+\item continuous
+\item discrete
+\end{itemize}
+
+\item<3-> We will focus on discrete-time transitions
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition Transition System}
+Definition (Transition System) \\
+A $Transition~System$ is a 3-tuple $M = (S, S_0, T)$ consisting of
+\begin{itemize}
+\item a set of states $S$,
+
+\item a set of initial states $S_0 \subseteq S$\item a transition relation $T \subseteq (S X S)$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modeling Sequential Code: An Example}
+\uncover<1->{\includegraphics[scale=0.3]{pics/code.png}}\hfill
+\uncover<2->{\includegraphics[scale=0.3]{pics/xymodprogcfg.png}} \\
+\uncover<3->{\includegraphics[scale=0.25]{pics/xymodprogTS1.png}} \\
+\uncover<3->{\tiny{$TS:~M = (S, S_0, R)$}}
+\begin{itemize}
+\item<3-> $S = (D_1 X D_2)$, where $D_1 = \{0,1,2\}, D_2 = \{0,1,2,3\}$
+\item<3-> $S_0 = \{(0,0)\}$
+\item<3-> $R = \{ ((0,0),(1,2)), ((0,1),(1,2)), ((1,2),(2,3)), ((2,3),(0,1))  \}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Towards Symbolic Representation for TS:\\
+Notation for States}
+\begin{itemize}
+\item $S$ - set of states
+
+\item $s \in S$ - one particular state
+
+\item $s,x$ - the value of some variable $x$ in state $s$. \\
+These are called \underline{state variables}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Towards Symbolic Representation for TS:\\The Transition Relation}
+\includegraphics[scale=0.3]{pics/symbolic1.png}
+\end{frame}
+
+\begin{frame}{Towards Symbolic Representation for TS:\\Characteristic Functions}
+\includegraphics[scale=0.3]{pics/symbolic2.png}
+\end{frame}
+
+\begin{frame}{Towards Symbolic Representation for TS:\\The Transition Relation Again}
+\includegraphics[scale=0.3]{pics/symbolic3.png}
+\end{frame}
+
+\begin{frame}{Symbolic TS for the Code Example}
+\uncover<1->{\includegraphics[scale=0.3]{pics/code.png}}\hfill
+\uncover<2->{\includegraphics[scale=0.3]{pics/xymodprogcfg.png}} \\
+\uncover<3->{\includegraphics[scale=0.25]{pics/xymodprogTS1.png}} \\
+\uncover<3->{\tiny{$TS:~M = (S, S_0, R)$}}
+\begin{itemize}
+\item<3-> $S = (D_1 X D_2)$, where $D_1 = \{0,1,2\}, D_2 = \{0,1,2,3\}$
+\item<3-> $S_0(s): (s.x = 0 \land s.y =0)$
+\item<3-> $R(s,s'): (s'.x = s.x+1~mod~3) \land (s'.y = s'.x + 1) $
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Role of Nondeterminism in Modeling}
+\begin{itemize}
+\item<1-> $Nondeterminism$ is used to abstract, i.e., not deliberately committing, to certain details in modeling systems
+\begin{itemize}
+\item<2-> Initial nondeterminism: Initial state need not be unique
+
+\item<3-> Inputs (environment) nondeterminism: Inputs can change arbitrarily
+
+\item<4-> Scheduler nondeterminism (concurrent systems): Multiple successor states possible for a transition
+
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Initial State Nondeterminism}
+\uncover<1->{\includegraphics[scale=0.3]{pics/codearb.png}} \\
+%\uncover<2->{\includegraphics[scale=0.3]{pics/xymodprogcfg.png}} \\
+\uncover<3->{\includegraphics[scale=0.25]{pics/xymodprogTS.png}} \\
+\uncover<3->{\tiny{$TS:~M = (S, S_0, R)$}}
+\begin{itemize}
+\item<3-> $S = (Nat~X~Nat)$
+\item<3-> $S_0(s): (s.y = 0)$
+\item<3-> $R(s,s'): (s'.x = s.x+1~mod~3) \land (s'.y = s'.x + 1) $
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modeling Clocked Hardware}
+\uncover<1->{\includegraphics[scale=0.3]{pics/mod3cnt.png}}
+\begin{itemize}
+\item One global clock: $clk$
+
+\item One input: $rst$
+
+\item Next-state logic: dashed box
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modeling Inputs in TS}
+\uncover<1->{\includegraphics[scale=0.3]{pics/mod3cnt.png}}\hfill
+\uncover<2->{\includegraphics[scale=0.3]{pics/mod3cntTSwithInput.png}} \\
+\uncover<3->{\includegraphics[scale=0.3]{pics/inputnondetTS.png}}
 \end{frame}
 
 \begin{frame}{}
-%\uncover<1->{\includegraphics[scale=0.3]{pics/trafficsignal.png}}\hfill
+\end{frame}
+
+\begin{frame}{}
+\begin{itemize}
+\item
+
+\end{itemize}
 \end{frame}
 
 \begin{frame}{}
 
 \end{frame}
-
-\begin{frame}{}
-
-\end{frame}
-
-\begin{frame}{Some Definitions}
-\begin{itemize}
-\uncover<1->{\item Bounded Satisfaction of a path: $\pi {\models}_k \phi$ }\\
-\begin{itemize}
-\uncover<1->{\item SAT of $\pi$ requires inspecting only a $k$-long (or shorter) $\pi$-prefix \\
-\item $\pi$ is $k$-bounded lasso $\implies$ $\pi {\models}_k \phi$}
-\end{itemize}
-
-\uncover<2->{\item Bounded satisfaction by a TS $M$: $M \models_k \phi $} \\
-\begin{itemize}
-\uncover<2->{\item every lasso-shaped  $k$-bounded path $\pi$ in $M$ satisfies $\phi$}
-\end{itemize}
-
-\uncover<3->{\item A $Completeness Threshold ~(CT)~K$ for an $(M, \phi)$ is a $K$ s.t.: }
-\begin{itemize}
-\uncover<3->{\item $M \models_K \phi \implies M\models \phi$}
-    \uncover<4->{\item why should such a $K$ exist at all?}
-\end{itemize}
-
-\end{itemize}
-\end{frame}
-
 
 \end{document}
