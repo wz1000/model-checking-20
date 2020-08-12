@@ -54,7 +54,7 @@ TA: Zubin Duggal}
 \item<4->Can we have methods that guarantee 100\% coverage
 \begin{itemize}
 \item<5->Formal Verification: Methods based on Logic and Automata theory
-\item<6-> Model Checking is one such popular techinique
+\item<6-> Model Checking is one such popular technique
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -87,12 +87,36 @@ E. Allen Emerson~~~~~~~~~~~Edmund Clarke~~~~~~~~~~~~Joseph Sifakis
 \includegraphics[scale=0.3]{pics/contdynamics.png}
 \end{frame}
 
+\begin{frame}{Other Powerful Formal Verification Methods}
+\begin{enumerate}
+\item<1-> Abstract Interpretation (Static Analysis)
+\begin{itemize}
+\item Automatic, most scalable and widely used
+
+\item Imprecise (False negatives)
+\end{itemize}
+\item<2-> Theorem Proving
+\begin{itemize}
+\item Most general: For Models and properties
+
+\item Mostly Interactive
+\end{itemize}
+
+\item<3-> Model Checking
+\begin{itemize}
+\item Significant industry interest: Intel, ARM, MicrSoft, Google, Facebook
+\item A very active research area
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
 \begin{frame}{Brief Course Outline}
 \begin{enumerate}
 \item Modeling Systems (Kripke Structures)
 \item Specifying Properties (Temporal logics: CTL, LTL, CTL*)
 \item Verifying Properties (Model Checking for Temporal logics)
-\item Abstraction Techniques
+\item Tools Exercises: NuSMV, CBMC, SATABS
+\item Abstraction and Induction: Scaling Techniques
 \item Automata-Based Model Checking
 \end{enumerate}
 \end{frame}
@@ -123,7 +147,10 @@ E. Allen Emerson~~~~~~~~~~~Edmund Clarke~~~~~~~~~~~~Joseph Sifakis
 eTextBook will be made available for class \\
 usage on shared (sign-up sheet) basis \\
 Access details will be shared on Moodle
+\end{frame}
 
+\begin{frame}{Industry Recognition Anecdote}
+\includegraphics[scale=0.25]{pics/billgates.png} 
 \end{frame}
 
 \begin{frame}{}
@@ -133,9 +160,7 @@ Access details will be shared on Moodle
 
 \end{frame}
 
-\begin{frame}{}
 
-\end{frame}
 
 \begin{frame}{}
 
@@ -144,28 +169,5 @@ Access details will be shared on Moodle
 \begin{frame}{}
 
 \end{frame}
-
-\begin{frame}{Some Definitions}
-\begin{itemize}
-\uncover<1->{\item Bounded Satisfaction of a path: $\pi {\models}_k \phi$ }\\
-\begin{itemize}
-\uncover<1->{\item SAT of $\pi$ requires inspecting only a $k$-long (or shorter) $\pi$-prefix \\
-\item $\pi$ is $k$-bounded lasso $\implies$ $\pi {\models}_k \phi$}
-\end{itemize}
-
-\uncover<2->{\item Bounded satisfaction by a TS $M$: $M \models_k \phi $} \\
-\begin{itemize}
-\uncover<2->{\item every lasso-shaped  $k$-bounded path $\pi$ in $M$ satisfies $\phi$}
-\end{itemize}
-
-\uncover<3->{\item A $Completeness Threshold ~(CT)~K$ for an $(M, \phi)$ is a $K$ s.t.: }
-\begin{itemize}
-\uncover<3->{\item $M \models_K \phi \implies M\models \phi$}
-    \uncover<4->{\item why should such a $K$ exist at all?}
-\end{itemize}
-
-\end{itemize}
-\end{frame}
-
 
 \end{document}
