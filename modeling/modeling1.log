@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 AUG 2020 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 AUG 2020 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -999,11 +999,11 @@ File: pics/mod3cnt.png Graphic file (type png)
 Package pdftex.def Info: pics/mod3cnt.png used on input line 76.
 (pdftex.def)             Requested size: 134.29936pt x 48.37988pt.
 
-<pics/code.png, id=48, 248.93pt x 113.42375pt>
+<pics/code.png, id=48, 247.92625pt x 111.41624pt>
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 
 <pics/concprog.png, id=49, 813.0375pt x 263.98625pt>
 File: pics/concprog.png Graphic file (type png)
@@ -1027,7 +1027,7 @@ File: pics/code.png Graphic file (type png)
 
 <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/concprog.png Graphic file (type png)
  <use pics/concprog.png>
 Package pdftex.def Info: pics/concprog.png used on input line 76.
@@ -1047,7 +1047,7 @@ Package pdftex.def Info: pics/mod3cnt.png used on input line 76.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/concprog.png Graphic file (type png)
  <use pics/concprog.png>
 Package pdftex.def Info: pics/concprog.png used on input line 76.
@@ -1067,7 +1067,7 @@ Package pdftex.def Info: pics/mod3cnt.png used on input line 76.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/concprog.png Graphic file (type png)
 
 <use pics/concprog.png>
@@ -1088,7 +1088,7 @@ Package pdftex.def Info: pics/mod3cnt.png used on input line 76.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/concprog.png Graphic file (type png)
  <use pics/concprog.png>
 Package pdftex.def Info: pics/concprog.png used on input line 76.
@@ -1108,7 +1108,7 @@ Package pdftex.def Info: pics/mod3cnt.png used on input line 76.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/concprog.png Graphic file (type png)
 
 <use pics/concprog.png>
@@ -1129,7 +1129,7 @@ Package pdftex.def Info: pics/mod3cnt.png used on input line 76.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/concprog.png Graphic file (type png)
  <use pics/concprog.png>
 Package pdftex.def Info: pics/concprog.png used on input line 76.
@@ -1149,7 +1149,7 @@ Package pdftex.def Info: pics/mod3cnt.png used on input line 76.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 76.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/concprog.png Graphic file (type png)
 
 <use pics/concprog.png>
@@ -1199,7 +1199,7 @@ Package pdftex.def Info: pics/HWabs.png used on input line 97.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 152.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 
 <pics/xymodprogcfg.png, id=168, 605.26125pt x 181.67876pt>
 File: pics/xymodprogcfg.png Graphic file (type png)
@@ -1220,7 +1220,7 @@ Package pdftex.def Info: pics/xymodprogTS1.png used on input line 152.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 152.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/xymodprogcfg.png Graphic file (type png)
  <use pics/xymodprogcfg.png>
 Package pdftex.def Info: pics/xymodprogcfg.png used on input line 152.
@@ -1236,7 +1236,7 @@ Package pdftex.def Info: pics/xymodprogTS1.png used on input line 152.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 152.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/xymodprogcfg.png Graphic file (type png)
 
 <use pics/xymodprogcfg.png>
@@ -1280,7 +1280,7 @@ Package pdftex.def Info: pics/symbolic3.png used on input line 176.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 188.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/xymodprogcfg.png Graphic file (type png)
  <use pics/xymodprogcfg.png>
 Package pdftex.def Info: pics/xymodprogcfg.png used on input line 188.
@@ -1296,7 +1296,7 @@ Package pdftex.def Info: pics/xymodprogTS1.png used on input line 188.
 File: pics/code.png Graphic file (type png)
  <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 188.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/xymodprogcfg.png Graphic file (type png)
 
 <use pics/xymodprogcfg.png>
@@ -1313,7 +1313,7 @@ File: pics/code.png Graphic file (type png)
 
 <use pics/code.png>
 Package pdftex.def Info: pics/code.png used on input line 188.
-(pdftex.def)             Requested size: 74.67957pt x 34.02737pt.
+(pdftex.def)             Requested size: 74.37845pt x 33.42513pt.
 File: pics/xymodprogcfg.png Graphic file (type png)
  <use pics/xymodprogcfg.png>
 Package pdftex.def Info: pics/xymodprogcfg.png used on input line 188.
@@ -1333,12 +1333,12 @@ Package pdftex.def Info: pics/xymodprogTS1.png used on input line 188.
 
 ] [37
 
-] <pics/codearb.png, id=254, 242.9075pt x 65.24374pt>
+] <pics/codearb.png, id=254, 232.87pt x 71.26625pt>
 File: pics/codearb.png Graphic file (type png)
 
 <use pics/codearb.png>
 Package pdftex.def Info: pics/codearb.png used on input line 214.
-(pdftex.def)             Requested size: 72.8728pt x 19.57326pt.
+(pdftex.def)             Requested size: 69.86153pt x 21.38002pt.
  <pics/xymodprogTS.png, id=255, 828.09375pt x 293.095pt>
 File: pics/xymodprogTS.png Graphic file (type png)
 
@@ -1352,7 +1352,7 @@ File: pics/codearb.png Graphic file (type png)
 
 <use pics/codearb.png>
 Package pdftex.def Info: pics/codearb.png used on input line 214.
-(pdftex.def)             Requested size: 72.8728pt x 19.57326pt.
+(pdftex.def)             Requested size: 69.86153pt x 21.38002pt.
 File: pics/xymodprogTS.png Graphic file (type png)
  <use pics/xymodprogTS.png>
 Package pdftex.def Info: pics/xymodprogTS.png used on input line 214.
@@ -1363,7 +1363,7 @@ Package pdftex.def Info: pics/xymodprogTS.png used on input line 214.
 File: pics/codearb.png Graphic file (type png)
  <use pics/codearb.png>
 Package pdftex.def Info: pics/codearb.png used on input line 214.
-(pdftex.def)             Requested size: 72.8728pt x 19.57326pt.
+(pdftex.def)             Requested size: 69.86153pt x 21.38002pt.
 File: pics/xymodprogTS.png Graphic file (type png)
 
 <use pics/xymodprogTS.png>
@@ -1518,7 +1518,7 @@ l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on modeling1.pdf (51 pages, 4516761 bytes).
+Output written on modeling1.pdf (51 pages, 4489976 bytes).
 PDF statistics:
  413 PDF objects out of 1000 (max. 8388607)
  296 compressed objects within 3 object streams
