@@ -41,18 +41,55 @@
 \begin{itemize}
 \item What's a Model?
 
-\item State-Transition Systems (Kripke Strctures)
+\item State-Transition Systems (TS)
 
-\item Behaviors, Properties, and the Model Checking Problem
-
-\item Modeling and Abstraction
+\item Abstraction and Non-determinism in Modeling
 
 \item Modeling Examples
+
+\item Kripke Structures, Behaviors of TS
 \end{itemize}
 \end{frame}
 
-\begin{frame}{An Continuous Domain Example}
-\uncover<1->{\includegraphics[scale=0.3]{pics/contdynamics.png}}
+\begin{frame}{Model Checking: Cited for Turing Award in 2007 \\
+(Invented: 1986)}
+\includegraphics[scale=0.4]{pics/allen.png}\hfill
+\includegraphics[scale=0.4]{pics/clarke.png}\hfill
+\includegraphics[scale=0.4]{pics/sifakis.png}
+
+E. Allen Emerson~~~~~~~~~~~Edmund Clarke~~~~~~~~~~~~Joseph Sifakis
+\includegraphics[scale=0.5]{pics/Citation.png} 
+\end{frame}
+
+\begin{frame}{What Kind of Systems and Properties?}
+\uncover<1->{\includegraphics[scale=0.3]{pics/trafficsignal.png}}\hfill
+\uncover<3->{\includegraphics[scale=0.2]{pics/mod3cnt.png}}\\
+\uncover<2->{\tiny{``traffic lights should never be green at the same time''}} \hfill
+\uncover<4->{\tiny{``the counter value (`ab') is always $\leq$ 2''}}
+\vfill
+\uncover<5->{\includegraphics[scale=0.3]{pics/code.png}}\hfill
+\uncover<7->{\includegraphics[scale=0.15]{pics/concprog.png}}\\
+\uncover<6->{\tiny{``@line~3: $y \geq x$ $always$ holds''}} \hfill
+\uncover<8->{\tiny{``the program has no data races''}} \\
+\uncover<6->{\tiny{``@line~3: x=0 holds infinitely often''}}
+
+\end{frame}
+
+\begin{frame}{What Kind of Systems Not} 
+\includegraphics[scale=0.3]{pics/contdynamics.png}
+\end{frame}
+
+\begin{frame}{What do we need for formal verification?}
+\begin{itemize}
+\item<1-> Need a common formalism to model all systems of interest:
+\textbf{Transition Systems (M)}
+
+\item<2-> Need an expressive logic/language to specify desired properties \\
+\textbf{``Special-purpose Temporal Logics (Prop)''}
+
+\item<3-> Need efficient algorithms to automatically check properties \\
+\textbf{M $\models$ Prop}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{A Hardware Abstraction Example}
@@ -176,21 +213,54 @@ These are called \underline{state variables}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Modeling Clocked Hardware}
+\begin{frame}{Modeling Clocked Hardware: Modulo 4 Counter}
 \uncover<1->{\includegraphics[scale=0.3]{pics/mod3cnt.png}}
 \begin{itemize}
-\item One global clock: $clk$
+\item One global clock: $clk$ \\
 
 \item One input: $rst$
 
-\item Next-state logic: dashed box
+\item Next-state logic (dashed box): \\
+$a, b$ (flip-flops) change $synchronously$ with every tick of $clk$
+\begin{itemize}
+\item $\delta(a, b, rst).a \equiv \overline{rst}~.~(a \oplus b)$
+\item $\delta(a, b, rst).b \equiv \overline{rst}~.~\overline{b}$
+\end{itemize}
+
+
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Modeling Inputs in TS}
 \uncover<1->{\includegraphics[scale=0.3]{pics/mod3cnt.png}}\hfill
 \uncover<2->{\includegraphics[scale=0.3]{pics/mod3cntTSwithInput.png}} \\
-\uncover<3->{\includegraphics[scale=0.3]{pics/inputnondetTS.png}}
+\uncover<3->{\includegraphics[scale=0.3]{pics/inputnondetTS.png}}\hfill $T(s,s') \equiv$ \\
+~~~~~~~~~~~~~~~~~~~$(\delta(s.a,s.b, s.rst) = s'.ab \lor$ \\
+~~~~~~~~~~~~~~~~~~~$\delta(s.a,s.b,s.rst) = s'.ab$
+\end{frame}
+
+\begin{frame}{Assumptions on Transition Systems}
+Definition (Transition System) \\
+A $Transition~System$ is a 3-tuple $M = (S, S_0, T)$ consisting of
+\begin{itemize}
+\item a set of states $S$,
+
+\item a set of initial states $S_0 \subseteq S$\item a transition relation $T \subseteq (S X S)$
+\end{itemize}
+
+\begin{enumerate}
+\item<1-> Domains of state variables are \underline{finite and discrete}
+
+\item<2-> Transition relation is total (No loss of generality)
+\begin{itemize}
+\item How about terminating systems, e.g., code?
+\item If $T(s,s') \equiv false$, then redfeine it as $T'(s,s') \equiv (s=s') $
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Terminating TS}
+\includegraphics[scale=0.3]{pics/terminatingTS.png}
 \end{frame}
 
 \begin{frame}{}
@@ -206,5 +276,11 @@ These are called \underline{state variables}
 \begin{frame}{}
 
 \end{frame}
+
+\begin{frame}{An Continuous Domain Example}
+\uncover<1->{\includegraphics[scale=0.3]{pics/contdynamics.png}}
+\end{frame}
+
+
 
 \end{document}
