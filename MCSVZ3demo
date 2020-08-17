@@ -1,0 +1,31 @@
+1. Illustrate SMT-lib Z3 syntax and commands on some simple propositional examples
+   - checking SAT and getting models
+   - UNSAT and showing validity via UNSAT
+   - getting multiple models by blocking earlier SAT assignments
+
+
+2. Symbolic representation of Image of a set under a transition relation
+   Illustration of extension to QBF
+------------------------------------------------------------------------
+
+(declare-const a Bool)
+(declare-const b Bool)
+(define-fun T ((x Bool) (y Bool)) Bool (= y (not x)))
+(define-fun img ((y Bool)) Bool (exists ((x bool)) (T x y) ))
+(assert (and (img a) (not a)))
+(check-sat)
+(get-model)
+
+(assert (= (exists ((x bool)) (T x a)) false))
+(check-sat)
+
+(declare-const c Bool)
+(assert (not (implies (and (= (img a) b) (= (img b) c)) (= a c))))
+(check-sat)
+
+
+3. Guide them to do iterative image computation (as above) for mod4 counter with reset shown in class
+
+4. Can you do the same for while code transition system shown in class using SMT feature on NAT or BV?
+   Specifically, does existential elimination work over NAT or BV?
+
