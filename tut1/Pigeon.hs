@@ -19,9 +19,8 @@ addConstraints z3 n pigeons = do
   forM_ pigeons $ \pigeon -> assert z3 $ orMany pigeon -- Each pigeon is in at least 1 hole
 
   assert z3 $ SMT.not $ orMany $ [ orMany [SMT.and p1 p2 -- There are two distinct pigeons in that hole
-                                          | p1 <- hole
-                                          , p2 <- hole
-                                          , p1 /= p2
+                                          | (p1:ps) <- tails hole
+                                          , p2      <- ps
                                           ]
                                  | hole <- transpose pigeons] -- For some hole
 
