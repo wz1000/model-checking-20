@@ -1,0 +1,25 @@
+MODULE main
+  VAR c : counter;
+
+MODULE counter
+  VAR state : {zero, one, two , three};
+  VAR input : {zero, one};
+  VAR reset : {no,yes};
+ASSIGN
+  init(state) := zero;
+  next(state) :=
+    case
+      reset = yes                 : zero;
+      input = zero                : state;
+      input = one & state = zero  : one;
+      input = one & state = one   : two;
+      input = one & state = two   : three;
+      input = one & state = three : zero;
+      TRUE : state;
+    esac;
+
+  init(input) := {zero,one};
+  next(input) := {zero,one};
+
+  init(reset) := {no,yes};
+  next(reset) := {no,yes};
