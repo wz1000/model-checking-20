@@ -51,6 +51,7 @@
 \end{itemize}
 \end{frame}
 
+<<<<<<< HEAD
 \begin{frame}{What do we need for formal verification?}
 \begin{itemize}
 \item<1-> Need a common formalism to model all systems of interest:
@@ -62,6 +63,16 @@
 \item<3-> Need efficient algorithms to automatically check properties \\
 \textbf{M $\models$ Prop}
 \end{itemize}
+=======
+\begin{frame}{Model Checking: Cited for Turing Award in 2007 \\
+(Invented: 1986)}
+\includegraphics[scale=0.4]{pics/allen.png}\hfill
+\includegraphics[scale=0.4]{pics/clarke.png}\hfill
+\includegraphics[scale=0.4]{pics/sifakis.png}
+
+E. Allen Emerson~~~~~~~~~~~Edmund Clarke~~~~~~~~~~~~Joseph Sifakis
+\includegraphics[scale=0.5]{pics/Citation.png} 
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \end{frame}
 
 \begin{frame}{What Kind of Systems and Properties?}
@@ -75,6 +86,27 @@
 \uncover<6->{\tiny{``@line~3: $y \geq x$ $always$ holds''}} \hfill
 \uncover<8->{\tiny{``the program has no data races''}} \\
 \uncover<6->{\tiny{``@line~3: x=0 holds infinitely often''}}
+<<<<<<< HEAD
+=======
+
+\end{frame}
+
+\begin{frame}{What Kind of Systems Not} 
+\includegraphics[scale=0.3]{pics/contdynamics.png}
+\end{frame}
+
+\begin{frame}{What do we need for formal verification?}
+\begin{itemize}
+\item<1-> Need a common formalism to model all systems of interest:
+\textbf{Transition Systems (M)}
+
+\item<2-> Need an expressive logic/language to specify desired properties \\
+\textbf{``Special-purpose Temporal Logics (Prop)''}
+
+\item<3-> Need efficient algorithms to automatically check properties \\
+\textbf{M $\models$ Prop}
+\end{itemize}
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \end{frame}
 
 \begin{frame}{A Hardware Abstraction Example}
@@ -136,6 +168,7 @@ A $Transition~System$ is a 3-tuple $M = (S, S_0, T)$ consisting of
 \end{itemize}
 \end{frame}
 
+<<<<<<< HEAD
 \begin{frame}{Modeling Sequential Code: An Example}
 \uncover<1->{\includegraphics[scale=0.3]{pics/code.png}}\hfill
 \uncover<2->{\includegraphics[scale=0.3]{pics/xymodprogcfg.png}} \\
@@ -195,6 +228,8 @@ $~~~~~~~~((0,x), (1,2)), ((1,x), (2,3)), ((2,x), (0,1))\}$
 \includegraphics[scale=0.3]{pics/symbolic2.png}
 \end{frame}
 
+=======
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \begin{frame}{Towards Symbolic Representation for TS:\\
 Notation for States}
 \begin{itemize}
@@ -211,6 +246,13 @@ These are called \underline{state variables}
 \includegraphics[scale=0.3]{pics/symbolic1.png}
 \end{frame}
 
+<<<<<<< HEAD
+=======
+\begin{frame}{Towards Symbolic Representation for TS:\\Characteristic Functions}
+\includegraphics[scale=0.3]{pics/symbolic2.png}
+\end{frame}
+
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \begin{frame}{Towards Symbolic Representation for TS:\\The Transition Relation Again}
 \includegraphics[scale=0.3]{pics/symbolic3.png}
 \end{frame}
@@ -218,7 +260,11 @@ These are called \underline{state variables}
 \begin{frame}{Symbolic TS for the Code Example}
 \uncover<1->{\includegraphics[scale=0.3]{pics/code.png}}\hfill
 \uncover<2->{\includegraphics[scale=0.3]{pics/xymodprogcfg.png}} \\
+<<<<<<< HEAD
 \uncover<3->{\includegraphics[scale=0.25]{pics/xymodprogTS.png}} \\
+=======
+\uncover<3->{\includegraphics[scale=0.25]{pics/xymodprogTS1.png}} \\
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \uncover<3->{\tiny{$TS:~M = (S, S_0, R)$}}
 \begin{itemize}
 \item<3-> $S = (D_1 X D_2)$, where $D_1 = \{0,1,2\}, D_2 = \{0,1,2,3\}$
@@ -244,12 +290,20 @@ These are called \underline{state variables}
 \begin{frame}{Initial State Nondeterminism}
 \uncover<1->{\includegraphics[scale=0.3]{pics/codearb.png}} \\
 %\uncover<2->{\includegraphics[scale=0.3]{pics/xymodprogcfg.png}} \\
+<<<<<<< HEAD
 \uncover<2->{\includegraphics[scale=0.25]{pics/xymodprogTS.png} \\
 \tiny{(Assume initial arrows exist for all white nodes)}}
 \uncover<3->{\tiny{$TS:~M = (S, S_0, R)$}}
 \begin{itemize}
 \item<3-> $S = (Nat~X~Nat)$
 \item<3-> $S_0(s): true$
+=======
+\uncover<3->{\includegraphics[scale=0.25]{pics/xymodprogTS.png}} \\
+\uncover<3->{\tiny{$TS:~M = (S, S_0, R)$}}
+\begin{itemize}
+\item<3-> $S = (Nat~X~Nat)$
+\item<3-> $S_0(s): (s.y = 0)$
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \item<3-> $R(s,s'): (s'.x = s.x+1~mod~3) \land (s'.y = s'.x + 1) $
 \end{itemize}
 \end{frame}
@@ -275,6 +329,7 @@ $a, b$ (flip-flops) change $synchronously$ with every tick of $clk$
 \begin{frame}{Modeling Inputs in TS}
 \uncover<1->{\includegraphics[scale=0.3]{pics/mod3cnt.png}}\hfill
 \uncover<2->{\includegraphics[scale=0.3]{pics/mod3cntTSwithInput.png}} \\
+<<<<<<< HEAD
 \uncover<3->{\includegraphics[scale=0.3]{pics/inputnondetTS.png}}\hfill 
 \uncover<4->{\includegraphics[scale=0.15]{pics/mod4cntTS.png}}
 \end{frame}
@@ -286,19 +341,36 @@ $a, b$ (flip-flops) change $synchronously$ with every tick of $clk$
 %~~~~$\delta(a, b, rst).b \equiv \overline{rst}~.~\overline{b}$
 %\end{frame}
 
+=======
+\uncover<3->{\includegraphics[scale=0.3]{pics/inputnondetTS.png}}\hfill $T(s,s') \equiv$ \\
+~~~~~~~~~~~~~~~~~~~$(\delta(s.a,s.b, s.rst) = s'.ab \lor$ \\
+~~~~~~~~~~~~~~~~~~~$\delta(s.a,s.b,s.rst) = s'.ab$
+\end{frame}
+
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \begin{frame}{Assumptions on Transition Systems}
 Definition (Transition System) \\
 A $Transition~System$ is a 3-tuple $M = (S, S_0, T)$ consisting of
 \begin{itemize}
+<<<<<<< HEAD
 \item Domain of states $S$,
+=======
+\item a set of states $S$,
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 
 \item a set of initial states $S_0 \subseteq S$\item a transition relation $T \subseteq (S X S)$
 \end{itemize}
 
 \begin{enumerate}
+<<<<<<< HEAD
 \item<1-> Domains must be large enough include all possible values that the state variable can potentially range over
 
 \item<2-> Transition relation is total (No loss of generality) on $S$
+=======
+\item<1-> Domains of state variables are \underline{finite and discrete}
+
+\item<2-> Transition relation is total (No loss of generality)
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 \begin{itemize}
 \item How about terminating systems, e.g., code?
 \item If $T(s,s') \equiv false$, then redfeine it as $T'(s,s') \equiv (s=s') $
@@ -310,6 +382,7 @@ A $Transition~System$ is a 3-tuple $M = (S, S_0, T)$ consisting of
 \includegraphics[scale=0.3]{pics/terminatingTS.png}
 \end{frame}
 
+<<<<<<< HEAD
 \begin{frame}{Summary}
 \begin{itemize}
 \item What's a Model?
@@ -341,6 +414,25 @@ A $Transition~System$ is a 3-tuple $M = (S, S_0, T)$ consisting of
 %\begin{frame}{An Continuous Domain Example}
 %\uncover<1->{\includegraphics[scale=0.3]{pics/contdynamics.png}}
 %\end{frame}
+=======
+\begin{frame}{}
+\end{frame}
+
+\begin{frame}{}
+\begin{itemize}
+\item
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+
+\end{frame}
+
+\begin{frame}{An Continuous Domain Example}
+\uncover<1->{\includegraphics[scale=0.3]{pics/contdynamics.png}}
+\end{frame}
+>>>>>>> 28fb21a8b9e0e6bb9aab04d62330b0b7b7629924
 
 
 
