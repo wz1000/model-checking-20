@@ -1,0 +1,20 @@
+cabal-version:       >=1.10
+
+name:                tut1
+version:             0.1.0.0
+license-file:        LICENSE
+author:              Zubin Duggal
+maintainer:          zubin@cmi.ac.in
+build-type:          Simple
+
+executable queens
+  main-is:             Queens.hs
+  build-depends:       base >=4.13 && <4.14
+                     , simple-smt
+  default-language:    Haskell2010
+
+executable pigeon
+  main-is:             Pigeon.hs
+  build-depends:       base >=4.13 && <4.14
+                     , simple-smt
+  default-language:    Haskell2010

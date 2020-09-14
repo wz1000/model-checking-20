@@ -1,0 +1,21 @@
+MODULE main
+  VAR c : counter;
+  VAR r : restrict(c.reset);
+FAIRNESS
+  c.input;
+LTLSPEC G (F ! (c.hi | c.lo))
+
+MODULE counter
+  VAR lo   : boolean;
+  VAR hi   : boolean;
+  IVAR input : boolean;
+  IVAR reset : boolean;
+ASSIGN
+  init(lo) := FALSE;
+  next(lo) := (! reset) & ( lo xor input );
+
+  init(hi) := FALSE;
+  next(hi) := (! reset) & ( hi xor ( lo & input ));
+
+MODULE restrict(reset)
+TRANS !reset
